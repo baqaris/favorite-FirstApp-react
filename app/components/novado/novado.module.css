@@ -1,0 +1,17 @@
+.novadoButton{
+    border: none;
+    padding: 4px;
+    background-color: blue;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.novadoButton a{
+    color: red;
+    font-size: 25px;
+}
+
+.novadoButton span{
+    color: tomato;
+    font-size: 25px;
+}

@@ -1,0 +1,31 @@
+.name{
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: yellowgreen;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 50px;
+    
+}
+
+.divContainer{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    padding: 20px;
+    width: 100%;
+    align-items: center;
+    border:solid 3px white;
+    border-radius: 15px;
+    background-color: cadetblue;
+}
+
+.mainPage{
+    color: magenta;
+}
+
+.divContainer:hover{
+     background-color: rgb(134, 159, 160);
+}
+

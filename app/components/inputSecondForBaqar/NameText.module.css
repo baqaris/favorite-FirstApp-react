@@ -1,0 +1,58 @@
+.input{
+    width: 250px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 255, 64);
+    color: black;
+    transition: ease 0.3s;
+
+
+}
+
+.input:focus:hover{
+    transform: scale(1.05);
+   
+}
+
+.input:hover{
+    transform: scale(1.05);
+}
+
+.input::placeholder{
+    color: rgb(41, 143, 41);
+  
+}
+
+
+
+/*  დაამატე ღილაკი button ! */
+
+.button{
+background-color: blue;
+border: none;
+padding: 8px 13px;
+border-radius: 8px;
+cursor: pointer;
+transition: ease 0.3s;
+}
+
+.button:hover{
+    transform: scale(1.05);
+}
+
+.button:active{
+    background-color: rgb(134, 134, 173);
+}
+
+
+/* გამოჩენილი სახელები */
+
+
+.ullist{
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+     list-style: none;
+}

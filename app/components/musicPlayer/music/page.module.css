@@ -1,0 +1,109 @@
+.mainContiner {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 12px;
+    margin: 100px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px 30px;
+}
+
+.controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.controls button:hover {
+    transform: scale(1.2);
+    
+}
+
+.controls img {
+    width: 30px;
+    height: 30px;
+}
+
+.progressContainer {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progressBar {
+    height: 100%;
+    background-color: green;
+    transition: width 0.2s ease;
+}
+
+.imageGirl{
+    display: flex;
+    width:100%;
+    height: 100%;
+    border-radius: 20px;
+     backdrop-filter: blur(8px);
+    color: black;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    
+}
+
+.paceImage{
+    backdrop-filter: blur(1px);
+    width:300px;
+    height: 300px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-image: url("/musicImage/girlIsListening.webp");
+  background-size: cover;
+  background-position: center;
+
+}
+
+.playerContainer {
+    width: 70%;
+    height: 81%;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.playerContainer h1{
+    padding: 15px 30px;
+
+}

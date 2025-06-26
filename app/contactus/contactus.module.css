@@ -1,0 +1,18 @@
+.contactus{
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+    background-color: rgba(0, 0, 255, 0.596);
+    padding: 20px;
+    padding-top: 70px;
+    border-radius: 10px;
+    height: 200vh;
+}
+
+.buttons{
+    display: flex;
+    background-color: aqua;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 15px;
+}

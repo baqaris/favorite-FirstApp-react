@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+
+    background-color: brown;
+    height: 70px;
+    padding: 15px 25px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container a {
+    display: inline-block;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.container a:hover {
+    transform: scale(1.05);
+    background-color: darkblue;
+}
+
+.container a:active {
+
+    background-color: rgb(15, 15, 192);
+}
+
+
+.container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+   
+    height: 50px;
+
+
+    
+}

@@ -1,0 +1,33 @@
+.container input{
+    width: 300px;
+    height: 30px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(138, 175, 138);
+    outline: none;
+    transition: transform 0.4s ease;
+    color: black;
+    
+}
+
+.container input:focus{
+    transform: scale(1.05);
+  
+}
+
+.container input::placeholder{
+    color: rgba(24, 6, 124, 0.733);
+    padding: 5px;
+}
+
+.container{
+    display: flex;
+    gap:30px;
+}
+
+
+#butonInput{
+    width: 200px;
+    background-color: blue;
+}

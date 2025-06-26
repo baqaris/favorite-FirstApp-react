@@ -1,0 +1,78 @@
+@use "../../colors.scss" as colors; 
+
+
+.container{
+    border: none;
+    border-radius: 8px;
+    padding: 15px 28px;
+    cursor: pointer;
+     display: inline-flex;
+     align-items: center;
+     background-color: transparent;
+
+    
+}
+
+.fill{
+    background-color: colors.$lightInfoColor;
+    color: colors.$primaryColor;
+}
+
+
+
+.outline{
+background: colors.$whitee;
+color: colors.$primaryColor;
+border: 2px solid #{colors.$outline};
+
+
+}
+
+.addElement{
+background-color: colors.$addingColor;
+color:rgba(255, 255, 255, 0.808);
+transition:ease 0.2s;
+}
+
+.addElement:hover{
+    background-color: rgb(28, 173, 28);
+    transform: scale(1.03);
+}
+.addElement:active{
+    background-color: rgb(18, 134, 18);
+}
+
+
+
+.outline:hover:enabled{
+    background-color: colors.$whitee;
+    color: colors.$primeryText;
+    border: 2px solid #{colors.$primaryColor};
+}
+
+.outline:active:enabled{
+    background-color: colors.$primaryColor;
+    color: colors.$whitee
+}
+
+
+.fill:hover:enabled{
+    background-color: colors.$primaryhoverColor;
+    color: #fff;
+}
+
+.fill:active:enabled{
+    background-color: colors.$primaryColor;
+    color: #fff;
+}
+
+
+.fill:disabled{
+    background-color: colors.$bachgroundPrimaryColor;
+    color: colors.$secendaryTextColor;
+    cursor: not-allowed;
+}
+
+
+
+
