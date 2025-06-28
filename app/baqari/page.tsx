@@ -12,7 +12,7 @@ export default () => {
         <div className={styles.divContainer}>
             <h1 className={styles.name}>hello bakar</h1>
            <BackTohome />
-           <NameText />
+           <NameText title='push' mode="baqar" />
         </div>
     );
 }

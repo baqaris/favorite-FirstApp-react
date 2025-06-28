@@ -88,7 +88,27 @@
 }
 
 
+.NovadoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 150px;
+  background-color: rgba(255, 127, 80, 0.808);
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
 
+.goToNovado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:200px;
+  height: 100px;
+  background-color: rgba(255, 235, 205, 0.63);
+  border-radius: 4px;
+}
 
 
 

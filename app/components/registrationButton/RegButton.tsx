@@ -24,9 +24,10 @@ export default (props: Props) => {
          className={classes.join(" ").trim()} 
          onClick={props.onClick}
          >
+              add
             {props.icon && <span className={styles.icon} style={{ marginRight: "8px" }}>{props.icon}</span>}
             {props.title}
-            
+          
 
         </button>
 

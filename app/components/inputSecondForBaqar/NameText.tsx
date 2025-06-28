@@ -1,6 +1,15 @@
 import { useState } from "react";
 import styles from "./NameText.module.css";
-export default () => {
+
+
+type Props= {
+    title?: string;
+    className?: string;
+    mode?: "baqar" | "novatori";
+}
+
+
+export default (props:Props) => {
 
 
 
@@ -14,7 +23,11 @@ export default () => {
         setGetMessages([...getMessages, getMessage]);
         setGetMessage('')
     }
-
+    const classes = [styles.bakar, props.className];
+    if(props.mode ==="baqar"){
+        classes.push(styles.baqar);
+    }else{classes.push(styles.novatori)}
+    
 
     return (
 
@@ -25,11 +38,12 @@ export default () => {
                 placeholder="Please text your Name"
                 className={styles.input}
             />
-            <button className={styles.button}
+            <button className={ classes.join(" ").trim()}
                 onClick={click}
+                
 
             >
-                დაამატე
+                {props.title}
 
 
             </button>

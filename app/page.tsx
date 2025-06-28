@@ -23,6 +23,12 @@ export default function Home() {
 
       </div>
       <Link href="components/musicPlayer/music" id="musicButton">Music</Link>
+      <div className={style.NovadoContainer}>
+
+    <div className={style.goToNovado}>
+    <Link href="/novadoPage">Novado </Link>
+    </div>
+      </div>
 
     </main>
   );
