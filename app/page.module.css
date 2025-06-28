@@ -74,7 +74,7 @@
   font-size: large;
   font-weight: 600;
     transition: transform 0.3s ease;
-    margin-bottom: 20px;
+   
 }
 
 .main a:hover{
@@ -103,7 +103,7 @@
 .goToNovado{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:center;
   width:200px;
   height: 100px;
   background-color: rgba(255, 235, 205, 0.63);
