@@ -23,6 +23,9 @@ export default function ProductListPage() {
     const [isLoading, setIsLoading] = useState(true);
     const [selectImage, setSelectImage] = useState<string | null>(null);
 
+  
+
+ 
 
 
     const getProducts = () => {
@@ -53,7 +56,7 @@ export default function ProductListPage() {
                     <option value="desc">Descending</option>
                 </select>
 
-                <label style={{ marginLeft: "10px" }}>Limit : </label>
+                <label>Limit : </label>
                 <select onChange={(e) => setLimit(Number(e.target.value))} value={limit}>
                     <option value="5">5</option>
                     <option value="10">10</option>
@@ -73,7 +76,7 @@ export default function ProductListPage() {
 
                         <div key={product.id} className={styles.productList}>
 
-                            {/* ------ Photo zooming ------*/}
+                           
 
 
                             {product.image && (<img src={product.image} alt={product.title} onClick={() => setSelectImage(product.image)} />)}
@@ -93,6 +96,10 @@ export default function ProductListPage() {
                     ))}
                 </div>
             )}
+ {/* ------ Photo zooming ------*/}
+
+
+
             {selectImage && (
                 <div className={styles.modalOverlay}>
                     <div className={styles.modalContent}>
@@ -104,6 +111,7 @@ export default function ProductListPage() {
                 </div>
             )}
         </div >
+
 
 
     );

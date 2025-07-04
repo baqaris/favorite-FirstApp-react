@@ -51,6 +51,7 @@ export default () => {
         setTasks(tasks.filter((t) => t.id !== id))
     }
 
+  
     const completedCount = tasks.filter(task => task.completed).length;
 
     return (
@@ -69,7 +70,8 @@ export default () => {
 
                     <button
                         onClick={addTask}
-                    >დამატება
+                    >
+                        დამატება
                         <img src="/novadoIcon/plus.svg" />
                     </button>
                 </div>

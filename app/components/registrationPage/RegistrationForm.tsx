@@ -4,6 +4,7 @@ import styles from "./RegistrationForm.module.css";
 import RegistrationVideo from "../RegistrationVideo/RegistrationVideo";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
+import ChatBot from "../chatBot/registrationForm/ChatBotRegistration";
 
 
 export default function RegistrationForm() {
@@ -32,7 +33,18 @@ export default function RegistrationForm() {
         setAgreed(e.target.checked)
     }
 
+
+
     const registration = () => {
+        if (name.trim() === "") {
+            alert("Please enter your name");
+            return;
+        }
+
+        if (lastname.trim() === "") {
+            alert("Please enter your lastname");
+            return;
+        }
         if (password.trim() === "" || repeatPassword.trim() === "") {
             alert('please enter both password!!!');
             return;
@@ -54,6 +66,14 @@ export default function RegistrationForm() {
             alert('You must agree to the terms!');
             return;
         }
+
+        const user = {
+            name: name,
+            lastname: lastname,
+        };
+
+        localStorage.setItem("user", JSON.stringify(user));
+
         router.push("/dashboard");
     }
 
@@ -143,6 +163,9 @@ export default function RegistrationForm() {
                     </div>
                 </div>
             </div>
+            <>
+                <ChatBot />
+            </>
         </div>
 
 

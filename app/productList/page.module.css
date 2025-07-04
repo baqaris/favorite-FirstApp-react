@@ -14,12 +14,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   flex-direction: column;
-    gap:10px;
+   flex-wrap: wrap;
+    gap:50px;
     width: 100%;
    
     padding: 10px;
 }
+
+
 
 .productList{
     display: flex;
@@ -39,6 +41,20 @@
     background-color: rgba(172, 255, 47, 0.329);
     
       
+}
+
+
+.sortContainer{
+  display: flex;
+  gap:20px;
+  padding:  10px;
+  background-color: rgba(127, 255, 212, 0.466);
+  border-radius: 8px;
+  width: 350px;
+  align-items: center;
+}
+.sortContainer label{
+  color: black;
 }
 
 .productList img{

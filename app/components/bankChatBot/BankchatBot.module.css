@@ -1,0 +1,22 @@
+.chatBot{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+    font-size: 16px;
+    border-radius: 9999px;
+    background-color: rgba(0, 128, 0, 0.281);
+    transition: ease-in-out 0.3s;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: black;
+}
+
+.chatBot:hover{
+    transform: scale(1.2);
+    background-color: rgba(0, 128, 0, 0.459);
+}
