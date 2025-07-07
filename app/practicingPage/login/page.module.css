@@ -87,7 +87,7 @@ flex-direction: column;
 gap:5px;
 }
 
-.formSection input{
+.inputBase{
     height: 40px;
     outline: none;
     border: 1px solid #dcdcdc;
@@ -150,4 +150,15 @@ gap:5px;
     background-color: greenyellow;
     width: 100%;
     height: 50px;
+}
+
+
+
+/* -------- Eror ---------- */
+
+
+.erorInput {
+  border: 1px solid red;
+  outline: none;
+
 }

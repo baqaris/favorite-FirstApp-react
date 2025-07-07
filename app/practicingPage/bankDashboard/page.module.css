@@ -1,0 +1,16 @@
+.EntireConteiner{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+   background: linear-gradient(180deg, #061417 31.53%, #05511cce 80.83%, #03728B 108.47%);
+   color: white;
+}
+
+
+
+.bankHeader{
+    width: 100%;
+    margin-top: 60px;
+}
